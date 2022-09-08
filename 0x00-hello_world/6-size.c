@@ -4,10 +4,8 @@
  * main - Entry point
  *
  * Return: Always 0(success)
- */
-int main(void)
+ */main(void)
 {
-
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	printf("Size of an int: %zu byte(S)\n", sizeof(int));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
