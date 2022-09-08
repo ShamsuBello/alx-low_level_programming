@@ -2,11 +2,10 @@
 #include <unistd.h>
 
 /**
- * main - print quote
- *
- * Description: prints Dora's quote 
- *
- * Return: Always 1 (sucess)
+ * main - prints exactly "and that piece of art is useful"
+ * - Dora Korpar, 2015-10-19",
+ * followed by a new line, to the standard error.
+ * Return: Always 0 (sucess)
  */
 
 int main(void)
