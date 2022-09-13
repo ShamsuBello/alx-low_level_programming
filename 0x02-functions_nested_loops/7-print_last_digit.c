@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * print_last_digit-function that prints the last digit 
- * @n: takes in a number
+ * print_last_digit - function that prints the last digit 
+ * @n: takes in an integer
  * Return: return output
  */
-
 int print_last_digit(int n)
 {
 	int ln = n % 10;
