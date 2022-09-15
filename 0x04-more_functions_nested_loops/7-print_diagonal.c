@@ -20,13 +20,13 @@ void print_diagonal(int n)
 				_putchar(' ');
 			}
 
-			putchar('\\');
+			_putchar('\\');
 
 			if (len == (n - 1))
 			{
 				continue;
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
