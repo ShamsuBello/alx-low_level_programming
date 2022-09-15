@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * more_numbers - prints numbers 10times from 0 to 14
+ * more_numbers - prints numbers to 14
  *
  * Return: return nothing
  */
+
 void more_numbers(void)
 {
-	{
 		int n1, n2;
 
 		for (n1 = 0; n1 < 10; n1++)
@@ -23,5 +23,4 @@ void more_numbers(void)
 			}
 			putchar(10);
 		}
-	}
 }
