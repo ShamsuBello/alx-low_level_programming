@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	while (*s != '\0')
 	{
-		n[c] = *S;
+		n[c] = *s;
 		s++;
 		c++;
 	}
@@ -25,5 +25,5 @@ void rev_string(char *s)
 		s--;
 		*s = n[s];
 		c++;
-	}
+	i}
 }
