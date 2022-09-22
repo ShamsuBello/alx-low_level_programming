@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * rot13 - rot13 encoder
+ * rot13 - Write a function that encodes a string using rot13
  *
- * @str: string to be encoded
+ * @str: This is my input string
  *
- * Return: address of the encoded string
+ * Return: String converted to string
  */
 
 char *rot13(char *str)
@@ -13,7 +13,7 @@ char *rot13(char *str)
 	int index, count;
 
 	char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMNopqrstuvwxyzabcdefghijklm";
+	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (index = 0; str[index] != '\0'; ++index)
 	{
@@ -21,7 +21,7 @@ char *rot13(char *str)
 		{
 			if (str[index] == minus[count])
 			{
-				str[index] = mayus[count]
+				str[index] = mayus[count];
 				break;
 			}
 		}
