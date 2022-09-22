@@ -2,22 +2,23 @@
 
 /**
  * string_toupper - changes all lowercase letter to uppercase
- * @str: string to be changed
+ *
+ * @hi: string to be changed
  *
  * Return: address to the string
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *hi)
 {
 	int index = 0;
 	int desp = 'a' - 'A';
 
-	for (index = 0; str[index] != 0; ++index)
+	for (index = 0; hi[index] != '\0'; ++index)
 	{
-		if (str[index] >= 'a' && str[index] <= 'z')
+		if (hi[index] >= 'a' && hi[index] <= 'z')
 		{
-			str[index] = str[index] - desp;
+			hi[index] = hi[index] - desp;
 		}
 	}
-	retyrn (str);
+	return (hi);
 }
