@@ -2,9 +2,7 @@
 
 /**
  * rot13 - Write a function that encodes a string using rot13
- *
  * @str: This is my input string
- *
  * Return: String converted to string
  */
 
@@ -27,6 +25,7 @@ char *rot13(char *str)
 		}
 	}
 	str[index] = '\0';
+
 	return (str);
 }
 	
