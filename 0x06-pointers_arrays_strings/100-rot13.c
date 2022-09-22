@@ -2,6 +2,7 @@
 
 /**
  * rot13 - rot13 encoder
+ *
  * @str: string to be encoded
  *
  * Return: address of the encoded string
@@ -9,38 +10,23 @@
 
 char *rot13(char *str)
 {
-	int i = 0;
+	int index, count;
 
-	while (str[i] != '\0')
+	char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMNopqrstuvwxyzabcdefghijklm";
+
+	for (index = 0; str[index] != '\0'; ++index)
 	{
-		str[i] = transform_2(str[i]);
-		i++;
+		for (count = 0; minus[count] != '\0'; count++)
+		{
+			if (str[index] == minus[count])
+			{
+				str[index] = mayus[count]
+				break;
+			}
+		}
 	}
+	str[index] = '\0';
 	return (str);
 }
-
-/**
- * transform_2 - helper function to map a letter with it's rot13 encoding
- * @x: char to be encoded
- *
- * Return: the encoded char
- */
-
-char transform_2(char x)
-{
-	char one[s2] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char two[s2] = "NOPQRSTUVWXYZABCDEFGHIJKLMNopqrstuvwxyzabcdefghijklm";
-	int i = 0;
-	char replacement = x;
-
-	while (i < s2)
-	{
-		if (x == one[i])
-		{
-			replacement = two[i];
-			break;
-		}
-		i++;
-	}
-	return (replacement);
-}
+	
