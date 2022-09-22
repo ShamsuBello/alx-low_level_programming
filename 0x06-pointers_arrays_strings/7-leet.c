@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * leet - leet encoder
- * @changed: string to be encoded
+ * leet - Write a function that encodes a string into 1337
  *
- * Return: address of the encoded string
+ * @changed: This is the input string
+ *
+ * Return: String converted to 1337
  */
 
 char *leet(char *changed)
 {
 	int index, j;
-	char minus[] = {'a', 'e', 'o', 't', '\0'};
+	char minus[] = {'a', 'e', 'o', 't', 'l' '\0'};
 	char mayus[] = {'A', 'E', 'O', 'T', 'L','\0'};
 	char numbers[] = {'4', '3', '0', '7', '1', '\0'};
 
-
-	for (j = 0; changed[index] != '\0'; ++index)
+	for (index = 0; changed[index] != '\0'; ++index)
 		{
 			for (j = 0; j < 5; j++)
 			{
