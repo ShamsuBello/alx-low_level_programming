@@ -2,16 +2,12 @@
 
 /**
  * rot13 - Write a function that encodes a string using rot13
- *
  * @hi: This is my input string
- *
  * Return: String converted to string
  */
-
 char *rot13(char *hi)
 {
 	int index, count;
-
 	char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
