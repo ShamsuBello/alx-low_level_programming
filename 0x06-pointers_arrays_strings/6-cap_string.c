@@ -3,16 +3,17 @@
 /**
  * cap_string - Write a function that capitalizes all words of a string
  *
- * @entry: string to capitalize
+ * @entry: This is the input string
  *
- * Return: returns the capitalized string
+ * Return: String capitalized
  */
 
 char cap_string(char *entry)
 {
 	int conversion, index, count;
 
-	char chars[] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', '\n', '\0'};
+	char chars[] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
+	
 	conversion  = 32;
 
 	for (index = 0; entry[index] != '\0'; index++)
