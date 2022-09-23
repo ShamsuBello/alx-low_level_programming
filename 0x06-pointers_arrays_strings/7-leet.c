@@ -11,7 +11,7 @@
 char *leet(char *changed)
 {
 	int index, j;
-	char minus[] = {'a', 'e', 'o', 't', 'l' '\0'};
+	char minus[] = {'a', 'e', 'o', 't', 'l', '\0'};
 	char mayus[] = {'A', 'E', 'O', 'T', 'L','\0'};
 	char numbers[] = {'4', '3', '0', '7', '1', '\0'};
 
