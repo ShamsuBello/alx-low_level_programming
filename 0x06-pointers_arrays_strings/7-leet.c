@@ -25,5 +25,6 @@ char *leet(char *changed)
 				}
 			}
 		}
+
 		return (changed);
 }
