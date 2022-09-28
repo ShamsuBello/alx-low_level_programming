@@ -26,8 +26,9 @@ int pl(char *s, int l)
 {
 	if (l < 1)
 	{
-		return (1);
+		return (l);
 	}
+
 	if (*s == *(s + l))
 	{
 		return (pl(s + l, l - 2));
