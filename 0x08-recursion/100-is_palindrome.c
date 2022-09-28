@@ -31,11 +31,10 @@ int pl(char *s, int l)
 
 	if (*s == *(s + l))
 	{
-		return (pl(s + 1, l - 2));
+		return (pl(s + l, l - 2));
 	}
 return (0);
 }
-
 /**
  * is_palindrome - palindrome
  * @s: pointer to string
@@ -45,5 +44,5 @@ return (0);
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
-	return (pl(s, len - 1));
+	return (pl(s, len - l));
 }
