@@ -31,7 +31,7 @@ int pl(char *s, int l)
 
 	if (*s == *(s + l))
 	{
-		return (pl(s + l, l - 2));
+		return (pl(s + 1, l - 2));
 	}
 return (0);
 }
