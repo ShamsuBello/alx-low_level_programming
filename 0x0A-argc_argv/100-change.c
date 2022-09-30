@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	/*Declaring variables*/
 	int position, total, change, aux;
-	int coins[] = {25, 10, 5, 2, 1};  /*Array int*/
+	int coins[] = {25, 10, 5, 2, 1};/*Array int*/
 
 	position = total = change = aux = 0;
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	total = atoi(argv[1]); /* Convert str to int */
+	total = atoi(argv[1]);/*Convert str to int*/
 
 	if (total <= 0)
 	{
@@ -39,7 +39,9 @@ int main(int argc, char *argv[])
 			change += aux;
 			total -= coins[position] * aux;
 		}
+
 		position++;
+
 	}
 	printf("%d\", change);
 	return (0);
