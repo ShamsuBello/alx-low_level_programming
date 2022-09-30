@@ -1,6 +1,6 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - prints the multiplication of two integers
@@ -27,5 +27,6 @@ int main(int argc, char *argv[])
 
 				printf("%d\n", j);
 	}
+
 	return (0);
 }
