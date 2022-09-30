@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,9 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	/* Decalring Variables */
+	/*Declaring variables*/
 	int position, total, change, aux;
-	int coins[] = {25, 10, 5, 2, 1};  /* Array int */
+	int coins[] = {25, 10, 5, 2, 1};  /*Array int*/
 
 	position = total = change = aux = 0;
 
@@ -29,4 +29,19 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+
+	/*Declaring While*/
+	while (coins[position] != '\0')
+	{
+		if (total >= coins[position])
+		{
+			aux = (total / coins[position]);
+			change += aux;
+			total -= coins[position] * aux;
+		}
+		position++;
+	}
+	printf("%d\", change);
+	return (0);
 }
+
