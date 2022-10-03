@@ -6,7 +6,6 @@
  * str_concat - function that concatenate two string.
  * @s1: output string
  * @s2: input string
- *
  * Return: The returned pointer should point ta a newly allocated space in memory.
  */
 
@@ -19,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-	is (s2 == NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
