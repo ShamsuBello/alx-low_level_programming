@@ -44,4 +44,4 @@ int **alloc_grid(int width, int height) /* 6 columns and 4 rows*/
 
 		return (arr);
 	}
-}
+
