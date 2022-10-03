@@ -1,14 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * str_concat - function that concatenate two string.
  * @s1: output string
  * @s2: input string
  * Return: The returned pointer should point ta a newly allocated space in memory.
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	int a, b;
@@ -28,7 +26,6 @@ char *str_concat(char *s1, char *s2)
 	for (b = 0; s2[b] != '\0'; b++)
 	{
 	}
-
 	s = (char *) malloc(((a + b) + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
