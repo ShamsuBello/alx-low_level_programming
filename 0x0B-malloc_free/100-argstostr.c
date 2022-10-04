@@ -64,6 +64,6 @@ char *argstostr(int ac, char **av)
 		newString = _strcat(newString, "\n");
 	}
 	if (newString == NULL)
-		return(NULL);
+		return (NULL);
 	return (newString);
 }
