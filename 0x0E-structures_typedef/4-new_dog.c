@@ -10,7 +10,7 @@
  * Return: null
  */
 
-dog_t *new_dog(char *name, floatage, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog
 		unsigned int l1 = 0, l2 = 0, i, j;
