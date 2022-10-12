@@ -5,7 +5,7 @@
  * @array: Array containing elements
  * @size: number of elements in array
  * @cmp: function whcih compare values
- * Return: return -1 if no element match or when size is less than zero return pointer to the first  * corresponding element
+ * Return: return -1 if no element match
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
