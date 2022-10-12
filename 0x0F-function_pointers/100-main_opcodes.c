@@ -11,9 +11,8 @@
 int main(int argc, char *argv[])
 {
 
-	int index, bytes;
-	int (*address)(int, char **) == main;
-	unsigned char opcode;
+	int bytes, i;
+	char *arr;
 
 	if (argc != 2)
 	{
@@ -29,16 +28,17 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for (index = 0; index < bytes; index++)
-	{
-		opcode = *(unsigned char *)address;
-		printf("%.2x", opcode);
+	arr = (char *)main;
 
-		if (index == bytes - 1)
-			continue;
-		printf(" ");
-		address++;
+	for (i = 0; i < bytes; i++)
+	{
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+
+		printf("%02hhx ", arr[i]);
 	}
-	printf("\n");
 	return (0);
 }
