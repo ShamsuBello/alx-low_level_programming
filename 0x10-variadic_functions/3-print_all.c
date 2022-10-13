@@ -1,12 +1,10 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_all - prints all
  * @format: param
  */
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, k = 0;
@@ -21,7 +19,7 @@ void print_all(const char *const format, ...)
 		{
 			if (format[i] == t_arg[j] && k)
 			{
-				printf(",");
+				printf(", ");
 				break;
 			} j++;
 		}
