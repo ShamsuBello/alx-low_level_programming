@@ -5,7 +5,7 @@
  * @format: this is the format to print a value
  */
 
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, k = 0;
