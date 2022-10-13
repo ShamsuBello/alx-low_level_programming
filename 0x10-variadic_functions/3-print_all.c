@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - function that prints anything
- * @format: this is the format to print a value
+ * print_all - prints all
+ * @format: param
  */
 
 void print_all(const char * const format, ...)
@@ -42,8 +42,8 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-				printf("%s", str);
-				break;
+				printf("%s", str);		
+					break;
 		} i++;
 	}
 	printf("\n"), va_end(valist);

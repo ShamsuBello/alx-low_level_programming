@@ -3,25 +3,27 @@
 /**
  * print_strings - function that print strings, followed by a new line
  * @seperator: this is the input seperator
- * @n: this is the number of items
+ * @n: this is the number of strings
  */
 
 void print_strings(const char *seperator, const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int count;
+	va_list li;
+	unsigned int i;
+	char *str;
 
-	va_start(ap, n);
-	for (count = 0; count < n; count++)
+	va_start(li, n);
+
+	for (i = 0; i < n; i++)
 	{
-		char *s;
-
-		s = va_arg(ap, char *);
-		if (s == NULL)
-			printf("%s", s);
-		if (seperator != NULL && (count + 1) != n)
+		str = va_arg(li, char *);
+		if (str == NULL)
+			printf("(nil)");
+		else
+			printf("%s", str);
+		if (i != (n - 1) && seperator != NULL)
 			printf("%s", seperator);
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(li);
 }
