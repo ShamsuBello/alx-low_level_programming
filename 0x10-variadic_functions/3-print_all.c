@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variable_functions.h"
-#include <stdbool.h>
+
 
 /**
  * print_all - function that prints anything
